@@ -1,0 +1,83 @@
+@import "variables.scss";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+//then do @include *mixin name*
+// eg. @include border-radius(3px);
+
+//Font
+
+@mixin primary-font {
+  font-family: $primary-font;
+  color: $primary-font-color;
+  font-weight: 500;
+}
+
+@mixin secondary-font {
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+}
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function em-calc($px) {
+  $em-px: strip-unit(($px / $em));
+  $em-size: $em-px * 1em;
+  @return ($em-size);
+}
+
+//Display
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-medium}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+//@include display-mobile() /* note: @content begins here */ {
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+//@include margin(1px, null, 3px, 4px);
+
+//Random
+
+@mixin center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

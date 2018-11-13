@@ -1,0 +1,38 @@
+// Colours
+$blue: blue;
+$yellow: yellow;
+$white: white;
+$black: black;
+$grey: #b7b7b7;
+$transparent: rgba(255, 255, 255, 0.2);
+
+$primary-color: $blue;
+$secondary-color: $yellow;
+$primary-font-color: $black;
+$secondary-font-color: $grey;
+
+// Fonts
+$serif: "Lora", "Playfair Display", Georgia, serif;
+$sans-serif: "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
+$monospace: "Inconsolata", monospace;
+
+$primary-font: $sans-serif;
+$secondary-font: $serif;
+
+// Spacing
+//$mobile-space: 10px;
+//$desktop-space: 35px;
+
+$x-small: 0.5em;
+$small: 1em;
+$medium: 2em;
+$large: 3em;
+$x-large: 4em;
+
+$em: 16;
+
+// Breakpoints
+$breakpoint-small: 1px;
+$breakpoint-medium: 2px;
+$breakpoint-large: 3px;
+// @media (max-width: #{$breakpoint}) {
