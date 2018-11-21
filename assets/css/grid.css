@@ -12,38 +12,74 @@
 .col-1 {
   width: 8.33333%; }
 
+> .col-1 {
+  overflow: hidden; }
+
 .col-2 {
   width: 16.66667%; }
+
+> .col-2 {
+  overflow: hidden; }
 
 .col-3 {
   width: 25%; }
 
+> .col-3 {
+  overflow: hidden; }
+
 .col-4 {
   width: 33.33333%; }
+
+> .col-4 {
+  overflow: hidden; }
 
 .col-5 {
   width: 41.66667%; }
 
+> .col-5 {
+  overflow: hidden; }
+
 .col-6 {
   width: 50%; }
+
+> .col-6 {
+  overflow: hidden; }
 
 .col-7 {
   width: 58.33333%; }
 
+> .col-7 {
+  overflow: hidden; }
+
 .col-8 {
   width: 66.66667%; }
+
+> .col-8 {
+  overflow: hidden; }
 
 .col-9 {
   width: 75%; }
 
+> .col-9 {
+  overflow: hidden; }
+
 .col-10 {
   width: 83.33333%; }
+
+> .col-10 {
+  overflow: hidden; }
 
 .col-11 {
   width: 91.66667%; }
 
+> .col-11 {
+  overflow: hidden; }
+
 .col-12 {
   width: 100%; }
+
+> .col-12 {
+  overflow: hidden; }
 
 .offset-1 {
   margin-left: 8.33333%; }

@@ -1,23 +1,25 @@
 // Colours
-$blue: blue;
-$yellow: yellow;
-$white: white;
-$black: black;
-$grey: #b7b7b7;
+$blue: #1533ae;
+$yellow: #ffb300;
+$white: #ffffff;
+$black: #171717;
+$grey: #656565;
 $transparent: rgba(255, 255, 255, 0.2);
+$shadow: 0 0.5px 5px hsla(0, 0%, 0%, 0.69);
 
 $primary-color: $blue;
 $secondary-color: $yellow;
-$primary-font-color: $black;
+$primary-font-color: $white;
 $secondary-font-color: $grey;
 
 // Fonts
-$serif: "Lora", "Playfair Display", Georgia, serif;
-$sans-serif: "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
+$serif: "Arvo", serif, "Lora", "Playfair Display", Georgia, serif;
+$sans-serif: "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans",
+  Arial, sans-serif;
 $monospace: "Inconsolata", monospace;
 
-$primary-font: $sans-serif;
-$secondary-font: $serif;
+$primary-font: $serif;
+$secondary-font: $sans-serif;
 
 // Spacing
 //$mobile-space: 10px;
