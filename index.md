@@ -4,17 +4,13 @@ permalink: /
 title: Home
 ---
 
+<!-- 12 cols -->
+<!-- col8 offset 2 is center -->
+
 <div class="row">
-    <div class="col-1 offset-1">
-        <h2>hompeaggeee</h2>   
-    </div>
-    <div class="col-1">
-        <h2>hompeaggeee</h2>   
-    </div>
+  <div class="col-8 offset-2 center"><h2>Eastbourne Youth Field Gun</h2></div>
 </div>
 
 <div class="row">
-    <div class="col-1">
-        <h2>hi</h2>   
-    </div>
+  <div class="col-1"><h2>hi</h2></div>
 </div>

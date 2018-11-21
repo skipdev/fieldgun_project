@@ -22,6 +22,7 @@
 @mixin secondary-font {
   font-family: $secondary-font;
   color: $secondary-font-color;
+  font-size: 1.3em;
 }
 
 @function strip-unit($number) {

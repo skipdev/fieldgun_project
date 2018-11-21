@@ -1,0 +1,11 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+h1 {
+  @include primary-font;
+}
+
+h2 {
+  @include secondary-font;
+  //margin-top: -1em;
+}

@@ -1,18 +1,21 @@
+html {
+  box-sizing: border-box; }
+
 nav {
-  display: block;
-}
+  display: block; }
 
 .content {
-  font-family: "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans",
-    Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
   color: #656565;
+  font-size: 1.3em;
   min-width: 10em;
-  min-height: 40em;
-  top: 23.5em;
+  min-height: 18em;
+  top: 17em;
   position: relative;
   display: block;
   z-index: -1;
-}
+  margin-left: 1em;
+  margin-right: 1em; }
 
 .title {
   font-family: "Arvo", serif, "Lora", "Playfair Display", Georgia, serif;
@@ -20,14 +23,12 @@ nav {
   font-weight: 700;
   font-size: 2em;
   position: fixed;
-  z-index: 6;
-}
-.title > span {
-  text-transform: none;
-  opacity: 0.5;
-  font-weight: 300;
-  font-size: 12px;
-}
+  z-index: 6; }
+  .title > span {
+    text-transform: none;
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 12px; }
 
 .main-img {
   width: 100%;
@@ -40,23 +41,16 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
-.main-img-Home {
-  background-image: url("../../assets/img/home.jpg");
-}
+  background-size: cover; }
+  .main-img-Home {
+    background-image: url("../../assets/img/home.jpg"); }
+  .main-img-About {
+    background-image: url("../../assets/img/about.jpg"); }
+  .main-img-Team {
+    background-image: url("../../assets/img/team.jpg"); }
+  .main-img-Testimonials {
+    background-image: url("../../assets/img/testimonials.jpg"); }
+  .main-img-Gallery {
+    background-image: url("../../assets/img/gallery.jpg"); }
+  .main-img-Contact {
+    background-image: url("../../assets/img/contact.jpg"); }
