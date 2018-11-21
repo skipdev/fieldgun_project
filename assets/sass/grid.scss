@@ -27,6 +27,9 @@ $column-width: (100 / $column-count);
   .col-#{$i} {
     width: $column-width * $i * 1%;
   }
+  & > .col-#{$i} {
+    overflow: hidden;
+  }
 }
 
 //Offsets

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     {% include header.html %}
   </head>
   <body>
-    {% include menu.html %}
-    <nav class="hidden">{% include navigation.html %}</nav>
-    <h1>{{ page.title }}</h1>
-    <section>{{ content }}</section>
-    <footer>&copy; to me</footer>
+    <wrapper class="flex column">
+      <div class="main-img main-img-{{page.title}}"></div>
+      <div class="menu">{% include menu.html %}</div>
+      <h1 class="title offset-1">{{ page.title }}</h1>
+      <section class="content flex">{{ page.content }}</section>
+      <footer>&copy; to me</footer>
+    </wrapper>
   </body>
 </html>
