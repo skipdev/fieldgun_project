@@ -1,6 +1,10 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+html {
+  box-sizing: border-box;
+}
+
 nav {
   display: block;
 }
@@ -8,11 +12,13 @@ nav {
 .content {
   @include secondary-font;
   min-width: 10em;
-  min-height: 40em;
-  top: 23.5em;
+  min-height: 18em;
+  top: 17em;
   position: relative;
   display: block;
   z-index: -1;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .title {
@@ -39,19 +45,19 @@ nav {
   &-Home {
     background-image: url("../../assets/img/home.jpg");
   }
-  &-Home {
-    background-image: url("../../assets/img/home.jpg");
+  &-About {
+    background-image: url("../../assets/img/about.jpg");
   }
-  &-Home {
-    background-image: url("../../assets/img/home.jpg");
+  &-Team {
+    background-image: url("../../assets/img/team.jpg");
   }
-  &-Home {
-    background-image: url("../../assets/img/home.jpg");
+  &-Testimonials {
+    background-image: url("../../assets/img/testimonials.jpg");
   }
-  &-Home {
-    background-image: url("../../assets/img/home.jpg");
+  &-Gallery {
+    background-image: url("../../assets/img/gallery.jpg");
   }
-  &-Home {
-    background-image: url("../../assets/img/home.jpg");
+  &-Contact {
+    background-image: url("../../assets/img/contact.jpg");
   }
 }
