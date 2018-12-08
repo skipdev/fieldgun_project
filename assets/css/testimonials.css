@@ -1,0 +1,22 @@
+.testimonial {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 10em;
+  border-radius: 5%; }
+  .testimonial__left .testimonial {
+    border-top-left-radius: unset; }
+  .testimonial__right {
+    text-align: right; }
+    .testimonial__right .testimonial {
+      border-top-right-radius: unset; }
+
+.testimonial__author {
+  margin-bottom: -0.5em;
+  color: #656565; }
+
+.testimonial__content {
+  padding: 1em;
+  color: #656565;
+  opacity: 1; }
+
+.testimonial__row + .testimonial__row {
+  margin: 2.5em 0; }

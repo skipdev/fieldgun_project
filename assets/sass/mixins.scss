@@ -40,48 +40,25 @@
 
 //Display
 
-@mixin mobile {
-  @media (max-width: #{$breakpoint-small}) {
-    @content;
-  }
-}
-
 @mixin tablet {
-  @media (max-width: #{$breakpoint-medium}) {
+  @media (min-width: #{$breakpoint-medium}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (max-width: #{$breakpoint-large}) {
+  @media (min-width: #{$breakpoint-large}) {
     @content;
   }
 }
 
-//@include display-mobile() /* note: @content begins here */ {
-
-//Padding mixin
-@mixin padding($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-//Margin mixin
-@mixin margin($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
-}
-//@include margin(1px, null, 3px, 4px);
+//@include mobile()
 
 //Random
 
 @mixin center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @mixin rotate($rotate-value) {
@@ -111,4 +88,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin link-color($color) {
+  a:link {
+    color: $color;
+  }
+  a:visited {
+    color: $color;
+  }
+  a:active {
+    color: $color;
+  }
 }

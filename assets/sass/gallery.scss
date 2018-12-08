@@ -1,2 +1,59 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+.gallery__image {
+  height: 6.5em;
+  width: 6.5em;
+  &-wrapper {
+    height: 6.5em;
+    width: 6.5em;
+    margin: 0.2em auto !important;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  background-color: $black;
+  background-color: rgba(0, 0, 0, 0.95);
+  overflow: auto;
+  height: 100%;
+  z-index: 1;
+}
+
+.cross {
+  top: 0.25em;
+  right: 0.8em;
+  position: fixed;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: $white;
+  transition: 0.3s;
+}
+
+.cross:hover,
+.cross:focus {
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#gallery__image-popup {
+  width: 100%;
+  margin-top: 60%;
+}
+
+@include tablet {
+  .gallery__image {
+    height: 11em;
+    width: 11em;
+    &-wrapper {
+      height: 11em;
+      width: 11em;
+      margin: 0.9em auto !important;
+    }
+  }
+}

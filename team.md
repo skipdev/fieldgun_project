@@ -6,10 +6,25 @@ lead: Who are we?
 ---
 
 <div class="row">
-  <div class="col-8 offset-2 center"><h2>{{ page.title }}</h2></div>
+  <div class="col-8 offset-2 center subtitle"><h2>Meet the Team</h2></div>
 </div>
 
 <div class="row">
-  <div class="col-1"><h2>hi</h2></div>
+  <h3 class="col-12 person__name">Jamie Kisler</h3>
+  <span class="col-4 person__role">1st Trainer</span>
 </div>
-</html>
+
+<div class="row">
+  <h3 class="col-12 person__name">Ruth Kisler</h3>
+  <span class="col-4 person__role">Medic</span>
+</div>
+
+<div class="row">
+  <h3 class="col-12 person__name">Deanna Kisler</h3>
+  <span class="col-4 person__role">Media</span>
+</div>
+
+<div class="row">
+  <h3 class="col-12 person__name">Jaz Kisler</h3>
+  <span class="col-6 person__role">Physical Trainer</span>
+</div>

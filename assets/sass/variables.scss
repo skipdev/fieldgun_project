@@ -4,7 +4,7 @@ $yellow: #ffb300;
 $white: #ffffff;
 $black: #171717;
 $grey: #656565;
-$transparent: rgba(255, 255, 255, 0.2);
+$transparent: rgba(0, 0, 0, 0.1);
 $shadow: 0 0.5px 5px hsla(0, 0%, 0%, 0.69);
 
 $primary-color: $blue;
@@ -34,7 +34,7 @@ $x-large: 4em;
 $em: 16;
 
 // Breakpoints
-$breakpoint-small: 1px;
-$breakpoint-medium: 2px;
-$breakpoint-large: 3px;
-// @media (max-width: #{$breakpoint}) {
+//$breakpoint-small: 1px;
+$breakpoint-medium: 515px;
+$breakpoint-large: 900px;
+//used in display mixins
