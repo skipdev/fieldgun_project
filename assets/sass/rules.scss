@@ -11,6 +11,8 @@
 
 .row {
   flex-direction: row;
+  margin: 1em;
+  overflow: hidden;
 }
 
 .hidden {
@@ -19,4 +21,8 @@
 
 .center {
   text-align: center;
+}
+
+.row + .row {
+  margin: 0.75em 0em;
 }

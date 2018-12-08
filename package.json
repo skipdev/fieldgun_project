@@ -33,6 +33,7 @@
   "dependencies": {
     "eventmachine": "^2.2.1",
     "handlebars": "^4.0.12",
+    "mapbox-gl": "^0.52.0-beta.1",
     "npm-upgrade": "^1.4.1",
     "prettier": "^1.15.2",
     "progressbar.js": "^1.0.1"

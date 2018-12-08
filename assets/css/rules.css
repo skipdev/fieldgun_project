@@ -5,10 +5,15 @@
   flex-direction: column; }
 
 .row {
-  flex-direction: row; }
+  flex-direction: row;
+  margin: 1em;
+  overflow: hidden; }
 
 .hidden {
   display: none; }
 
 .center {
   text-align: center; }
+
+.row + .row {
+  margin: 0.75em 0em; }
