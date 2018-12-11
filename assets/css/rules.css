@@ -6,7 +6,7 @@
 
 .row {
   flex-direction: row;
-  margin: 1em;
+  margin: 1em 0.2em;
   overflow: hidden; }
 
 .hidden {
@@ -15,5 +15,7 @@
 .center {
   text-align: center; }
 
-.row + .row {
-  margin: 0.75em 0em; }
+.regular-link {
+  color: #656565; }
+  .regular-link:hover {
+    color: #333; }

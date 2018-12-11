@@ -10,6 +10,11 @@
   height: em-calc(100px);
 }
 
+.burger-label {
+  width: 1.5em;
+  top: 2.5em;
+}
+
 input + label {
   position: fixed;
   top: 2.3em;
@@ -28,6 +33,7 @@ input + label {
     display: block;
     background: $white;
     transition: 0.5s;
+    padding: 0 -1em;
   }
 
   span:first-child {
@@ -99,6 +105,11 @@ input ~ nav {
         text-transform: uppercase;
         height: 3em;
         margin: 1em;
+
+        &:hover {
+          color: rgba(214, 214, 214, 0.75);
+          transition: 0.5s;
+        }
       }
     }
   }
@@ -137,9 +148,9 @@ input:checked ~ nav {
     @include rotate(8deg);
     top: -15.5em;
     & ul {
-      top: 14.5em;
-      left: 22%;
-      font-size: 2em;
+      top: 16em;
+      left: 19%;
+      font-size: 1.5em;
       @include rotate(-8deg);
     }
   }
@@ -152,13 +163,14 @@ input:checked ~ nav {
     height: 3.5em;
 
     & span {
-      width: 300%;
-      left: -2em;
-      top: 2em;
-
-      &:last-child {
-        top: 18px;
-      }
+      width: 80%;
     }
+  }
+  input:checked + label span {
+    top: 31%;
+  }
+  .burger-label {
+    width: 3.5em;
+    right: 4em;
   }
 }

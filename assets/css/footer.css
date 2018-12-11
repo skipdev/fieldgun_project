@@ -1,5 +1,5 @@
 footer {
-  height: 3.5em;
+  height: 2.5em;
   left: 0;
   background-color: #1533ae;
   color: #ffffff;
@@ -8,7 +8,8 @@ footer {
   align-self: flex-end;
   position: fixed;
   bottom: -0.5em;
-  padding: 0.5em; }
+  padding: 0.5em;
+  text-align: left; }
   footer a:link {
     color: #ffffff; }
   footer a:visited {
@@ -17,3 +18,7 @@ footer {
     color: #ffffff; }
   footer a:hover {
     color: rgba(255, 255, 255, 0.6); }
+
+@media (min-width: 515px) {
+  footer {
+    padding-left: 3em; } }

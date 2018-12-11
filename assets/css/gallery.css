@@ -4,7 +4,7 @@
   .gallery__image-wrapper {
     height: 6.5em;
     width: 6.5em;
-    margin: 0.2em auto !important; }
+    margin: 0 auto !important; }
 
 .popup {
   display: none;
@@ -12,7 +12,7 @@
   padding: 1em;
   top: 0;
   left: 0;
-  background-color: #171717;
+  background-color: #333;
   background-color: rgba(0, 0, 0, 0.95);
   overflow: auto;
   height: 100%;
@@ -44,4 +44,12 @@
     .gallery__image-wrapper {
       height: 11em;
       width: 11em;
-      margin: 0.9em auto !important; } }
+      margin: 0.9em auto !important; }
+  #gallery__image-popup {
+    width: 100%;
+    margin-top: 40%; } }
+
+@media (min-width: 900px) {
+  #gallery__image-popup {
+    margin-top: 4%;
+    width: 80%; } }

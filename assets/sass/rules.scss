@@ -11,7 +11,7 @@
 
 .row {
   flex-direction: row;
-  margin: 1em;
+  margin: 1em 0.2em;
   overflow: hidden;
 }
 
@@ -23,6 +23,9 @@
   text-align: center;
 }
 
-.row + .row {
-  margin: 0.75em 0em;
+.regular-link {
+  color: $grey;
+  &:hover {
+    color: $black;
+  }
 }

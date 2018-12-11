@@ -1,2 +1,45 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button {
+  text-align: center;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  height: 1.8em;
+  width: 8em;
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: $white;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  transition: all 0.5s;
+  &:hover {
+    & span {
+      padding-right: 1em;
+    }
+    & span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+  & span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    &:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -2em;
+      transition: 0.5s;
+    }
+  }
+}
