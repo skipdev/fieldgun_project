@@ -11,6 +11,7 @@
   }
 }
 
+// popup window when a gallery image is clicked
 .popup {
   display: none;
   position: fixed;
@@ -24,6 +25,7 @@
   z-index: 1;
 }
 
+// cross symbol that closes the gallery popup
 .cross {
   top: 0.25em;
   right: 0.8em;

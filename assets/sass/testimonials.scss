@@ -6,6 +6,7 @@
   height: 10em;
   border-radius: 5%;
   &__left {
+    // makes the 'speech bubble' effect
     & .testimonial {
       border-top-left-radius: unset;
     }

@@ -4,13 +4,19 @@ permalink: /gallery/
 title: Gallery
 ---
 
+<!-- popup when image is clicked on -->
+
 <div id="popup" class="popup">
   <img id="gallery__image-popup" /> <span class="cross">&times;</span>
 </div>
 
+<!-- Title -->
+
 <div class="row">
   <div class="col-8 offset-2 center subtitle"><h2>Gallery</h2></div>
 </div>
+
+<!-- Content - each row has 2 images -->
 
 <div class="sub-content">
   <div class="row">

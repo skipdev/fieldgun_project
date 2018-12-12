@@ -1,13 +1,14 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+// makes all h1 tags the primary font, and all h2 the secondary font etc
+
 h1 {
   @include primary-font;
 }
 
 h2 {
   @include secondary-font;
-  //margin-top: -1em;
 }
 
 h3 {

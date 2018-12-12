@@ -33,6 +33,8 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+
+    //creates an arrow on hover
     &:after {
       content: "\00bb";
       position: absolute;

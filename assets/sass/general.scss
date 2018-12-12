@@ -57,6 +57,8 @@ nav {
     z-index: -1;
   }
 
+  // changes the main image depending on what page the user is on
+
   &-Home {
     background-image: url("../../assets/img/mobile_home.jpg");
   }
@@ -121,6 +123,9 @@ nav {
     &-wrapper {
       height: 20em;
     }
+
+    // re-sizes the page image to a desktop version
+
     &-Home {
       background-image: url("../../assets/img/home.jpg");
     }

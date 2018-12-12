@@ -1,17 +1,7 @@
 @import "variables.scss";
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-//then do @include *mixin name*
-// eg. @include border-radius(3px);
-
-//Font
-
+// Font
+// creates pre-made settings for a primary font
 @mixin primary-font {
   font-family: $primary-font;
   color: $primary-font-color;
@@ -19,12 +9,14 @@
   font-size: 2em;
 }
 
+// creates pre-made settings for a secondary font
 @mixin secondary-font {
   font-family: $secondary-font;
   color: $secondary-font-color;
   font-size: 1.3em;
 }
 
+// take units off to make a number arbitrary - used for the column count in grid.scss and em-calc below
 @function strip-unit($number) {
   @if type-of($number) == "number" and not unitless($number) {
     @return $number / ($number * 0 + 1);
@@ -32,14 +24,15 @@
   @return $number;
 }
 
+// calculated the em vlaue from entering a pixel value
 @function em-calc($px) {
   $em-px: strip-unit(($px / $em));
   $em-size: $em-px * 1em;
   @return ($em-size);
 }
 
-//Display
-
+// Display
+// quickly set a breakpoint for tablet and desktop
 @mixin tablet {
   @media (min-width: #{$breakpoint-medium}) {
     @content;
@@ -52,41 +45,45 @@
   }
 }
 
-//@include mobile()
-
-//Random
+// Random
 
 @mixin center {
   display: block;
   margin: 0 auto;
 }
 
+// rotates something and works in all browsers
 @mixin rotate($rotate-value) {
   -moz-transform: rotate($rotate-value);
   -webkit-transform: rotate($rotate-value);
   transform: rotate($rotate-value);
 }
 
+// create grey images
 @mixin grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
+// change the brightness of images
 @mixin brightness($brightness-value) {
   -webkit-filter: brightness($brightness-value);
   filter: brightness($brightness-value);
 }
 
+// put a box-shadow on images
 @mixin box-shadow {
   box-shadow: $shadow;
   -webkit-box-shadow: $shadow;
   -moz-box-shadow: $shadow;
 }
 
+// quickly create a text shadow of a certain colour
 @mixin text-shadow($color) {
   text-shadow: -5px 0 $color, 0 5px $color, 5px 0 $color, 0 -5px $color;
 }
 
+// for the main images - makes them have a parallax effect
 @mixin parallax {
   background-attachment: fixed;
   background-position: center;
@@ -94,6 +91,7 @@
   background-size: cover;
 }
 
+// quickly makes a link have the same colour in all states
 @mixin link-color($color) {
   a:link {
     color: $color;

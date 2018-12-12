@@ -21,9 +21,7 @@ $monospace: "Inconsolata", monospace;
 $primary-font: $serif;
 $secondary-font: $sans-serif;
 
-// Spacing
-//$mobile-space: 10px;
-//$desktop-space: 35px;
+// Measurements (might need)
 
 $x-small: 0.5em;
 $small: 1em;
@@ -34,7 +32,6 @@ $x-large: 4em;
 $em: 16;
 
 // Breakpoints
-//$breakpoint-small: 1px;
+// used in display mixins
 $breakpoint-medium: 515px;
 $breakpoint-large: 900px;
-//used in display mixins

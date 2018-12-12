@@ -15,6 +15,7 @@
   top: 2.5em;
 }
 
+// when there are 2 burger lines next to each other, do this (basically positioning for burger menu lines)
 input + label {
   position: fixed;
   top: 2.3em;
@@ -23,6 +24,7 @@ input + label {
   width: em-calc(15px);
   z-index: 5;
 
+  // styling the burger lines
   span {
     position: absolute;
     width: 100%;
@@ -36,12 +38,12 @@ input + label {
     padding: 0 -1em;
   }
 
+  // adjusting position of the top and bottom burger lines
   span:first-child {
     top: 3px;
   }
-
   span:last-child {
-    top: 16px;
+    top: 17px;
   }
 }
 
@@ -49,36 +51,41 @@ label:hover {
   cursor: pointer;
 }
 
+// using a checkbox menu, when it is clicked then do the following
+// create the 'x' shape for the close button
 input:checked + label {
+  // hide the middle line
   span {
     opacity: 0;
     top: 50%;
   }
-
+  // spin the first and last lines to create a cross shape
   span:first-child {
     opacity: 1;
-    transform: rotate(405deg);
+    @include rotate(405deg);
   }
-
   span:last-child {
     opacity: 1;
-    transform: rotate(-405deg);
+    @include rotate(-405deg);
   }
 }
 
+// navigation menu styling
 input ~ nav {
   background: $primary-color;
   position: fixed;
   top: -10.5em;
   left: -2em;
-  width: 150vw; //todo: fallback
+  width: 150vw;
   height: 19em;
   z-index: 3;
   transition: 0.5s;
   transition-delay: 0.5s;
   overflow: hidden;
+  // created the slanted menu effect
   @include rotate(10deg);
 
+  // nav list styling
   & ul {
     text-align: center;
     position: absolute;
@@ -89,6 +96,7 @@ input ~ nav {
     list-style-type: none;
     display: block;
     @include center;
+    // rotate the text to counter the slanted menu
     @include rotate(-10deg);
 
     & li {
@@ -115,6 +123,7 @@ input ~ nav {
   }
 }
 
+// when the button has been clicked, pull down the menu
 input:checked ~ nav {
   height: 44em;
   transition-delay: 0s;

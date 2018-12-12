@@ -1,6 +1,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+// basic classes that can be added to an element to quickly give them that styling
+
 .flex {
   display: flex;
 }
@@ -23,6 +25,7 @@
   text-align: center;
 }
 
+// make a link blend in with the rest of the text
 .regular-link {
   color: $grey;
   &:hover {
