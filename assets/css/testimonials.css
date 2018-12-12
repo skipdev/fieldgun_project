@@ -8,6 +8,8 @@
     text-align: right; }
     .testimonial__right .testimonial {
       border-top-right-radius: unset; }
+  .testimonial__sub-content {
+    margin-top: 2em; }
 
 .testimonial__author {
   margin-bottom: -0.5em;
@@ -20,3 +22,20 @@
 
 .testimonial__row + .testimonial__row {
   margin: 2.5em 0; }
+
+@media (min-width: 900px) {
+  .testimonial {
+    border-radius: 50%;
+    width: 40vw; }
+    .testimonial__left {
+      text-align: left; }
+    .testimonial__right .testimonial {
+      float: right;
+      margin-top: 1em; }
+  .testimonial__content {
+    padding: 1em 2em; }
+  .testimonial__row + .testimonial__row {
+    margin: 1em 0; }
+  .testimonial__author,
+  .testimonial__author--date {
+    font-size: 24px; } }

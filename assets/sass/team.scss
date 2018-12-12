@@ -1,2 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+@include desktop {
+  text-align: center;
+}

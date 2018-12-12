@@ -6,6 +6,10 @@
   z-index: 1;
   height: 6.25em; }
 
+.burger-label {
+  width: 1.5em;
+  top: 2.5em; }
+
 input + label {
   position: fixed;
   top: 2.3em;
@@ -22,7 +26,8 @@ input + label {
     left: 0;
     display: block;
     background: #ffffff;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding: 0 -1em; }
   input + label span:first-child {
     top: 3px; }
   input + label span:last-child {
@@ -77,13 +82,16 @@ input ~ nav {
       transition-delay: 0s; }
       input ~ nav ul li a {
         color: #ffffff;
-        font-family: "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
+        font-family: "Lato", "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans", Arial, sans-serif;
         font-weight: bold;
         display: block;
         text-decoration: none;
         text-transform: uppercase;
         height: 3em;
         margin: 1em; }
+        input ~ nav ul li a:hover {
+          color: rgba(214, 214, 214, 0.75);
+          transition: 0.5s; }
 
 input:checked ~ nav {
   height: 44em;
@@ -110,9 +118,9 @@ input:checked ~ nav {
     transform: rotate(8deg);
     top: -15.5em; }
     input ~ nav ul {
-      top: 14.5em;
-      left: 22%;
-      font-size: 2em;
+      top: 16em;
+      left: 19%;
+      font-size: 1.5em;
       -moz-transform: rotate(-8deg);
       -webkit-transform: rotate(-8deg);
       transform: rotate(-8deg); }
@@ -121,8 +129,9 @@ input:checked ~ nav {
   input + label {
     height: 3.5em; }
     input + label span {
-      width: 300%;
-      left: -2em;
-      top: 2em; }
-      input + label span:last-child {
-        top: 18px; } }
+      width: 80%; }
+  input:checked + label span {
+    top: 31%; }
+  .burger-label {
+    width: 3.5em;
+    right: 4em; } }

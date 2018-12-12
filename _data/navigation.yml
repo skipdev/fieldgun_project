@@ -1,12 +1,12 @@
 - name: "Home"
-  url: /
+  url: /temp_hosting/home
 - name: "About"
-  url: /about
+  url: /temp_hosting/about
 - name: "Meet the Team"
-  url: /team
+  url: /temp_hosting/team
 - name: "Testimonials"
-  url: /testimonials
+  url: /temp_hosting/testimonials
 - name: "Gallery"
-  url: /gallery
+  url: /temp_hosting/gallery
 - name: "Contact"
-  url: /contact
+  url: /temp_hosting/contact

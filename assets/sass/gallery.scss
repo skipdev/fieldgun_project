@@ -7,10 +7,11 @@
   &-wrapper {
     height: 6.5em;
     width: 6.5em;
-    margin: 0.2em auto !important;
+    margin: 0 auto !important;
   }
 }
 
+// popup window when a gallery image is clicked
 .popup {
   display: none;
   position: fixed;
@@ -24,6 +25,7 @@
   z-index: 1;
 }
 
+// cross symbol that closes the gallery popup
 .cross {
   top: 0.25em;
   right: 0.8em;
@@ -55,5 +57,16 @@
       width: 11em;
       margin: 0.9em auto !important;
     }
+  }
+  #gallery__image-popup {
+    width: 100%;
+    margin-top: 40%;
+  }
+}
+
+@include desktop {
+  #gallery__image-popup {
+    margin-top: 4%;
+    width: 80%;
   }
 }

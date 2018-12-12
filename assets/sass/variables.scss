@@ -2,7 +2,7 @@
 $blue: #1533ae;
 $yellow: #ffb300;
 $white: #ffffff;
-$black: #171717;
+$black: #333;
 $grey: #656565;
 $transparent: rgba(0, 0, 0, 0.1);
 $shadow: 0 0.5px 5px hsla(0, 0%, 0%, 0.69);
@@ -14,16 +14,14 @@ $secondary-font-color: $grey;
 
 // Fonts
 $serif: "Arvo", serif, "Lora", "Playfair Display", Georgia, serif;
-$sans-serif: "Open Sans", sans-serif, "Roboto", "Source Sans Pro", "Open Sans",
-  Arial, sans-serif;
+$sans-serif: "Lato", "Open Sans", sans-serif, "Roboto", "Source Sans Pro",
+  "Open Sans", Arial, sans-serif;
 $monospace: "Inconsolata", monospace;
 
 $primary-font: $serif;
 $secondary-font: $sans-serif;
 
-// Spacing
-//$mobile-space: 10px;
-//$desktop-space: 35px;
+// Measurements (might need)
 
 $x-small: 0.5em;
 $small: 1em;
@@ -34,7 +32,6 @@ $x-large: 4em;
 $em: 16;
 
 // Breakpoints
-//$breakpoint-small: 1px;
+// used in display mixins
 $breakpoint-medium: 515px;
 $breakpoint-large: 900px;
-//used in display mixins

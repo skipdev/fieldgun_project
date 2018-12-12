@@ -1,6 +1,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+// basic classes that can be added to an element to quickly give them that styling
+
 .flex {
   display: flex;
 }
@@ -11,7 +13,7 @@
 
 .row {
   flex-direction: row;
-  margin: 1em;
+  margin: 1em 0.2em;
   overflow: hidden;
 }
 
@@ -23,6 +25,10 @@
   text-align: center;
 }
 
-.row + .row {
-  margin: 0.75em 0em;
+// make a link blend in with the rest of the text
+.regular-link {
+  color: $grey;
+  &:hover {
+    color: $black;
+  }
 }

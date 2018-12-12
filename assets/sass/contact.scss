@@ -1,4 +1,14 @@
+@import "variables.scss";
+@import "mixins.scss";
+
 #map {
   position: inherit;
   height: 19em;
+}
+
+@include desktop {
+  #map {
+    width: 20vw;
+    margin-left: 27.5vw;
+  }
 }

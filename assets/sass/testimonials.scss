@@ -6,6 +6,7 @@
   height: 10em;
   border-radius: 5%;
   &__left {
+    // makes the 'speech bubble' effect
     & .testimonial {
       border-top-left-radius: unset;
     }
@@ -15,6 +16,9 @@
     & .testimonial {
       border-top-right-radius: unset;
     }
+  }
+  &__sub-content {
+    margin-top: 2em;
   }
 }
 
@@ -31,4 +35,30 @@
 
 .testimonial__row + .testimonial__row {
   margin: 2.5em 0;
+}
+
+@include desktop {
+  .testimonial {
+    border-radius: 50%;
+    width: 40vw;
+    &__left {
+      text-align: left;
+    }
+    &__right {
+      & .testimonial {
+        float: right;
+        margin-top: 1em;
+      }
+    }
+  }
+  .testimonial__content {
+    padding: 1em 2em;
+  }
+  .testimonial__row + .testimonial__row {
+    margin: 1em 0;
+  }
+  .testimonial__author,
+  .testimonial__author--date {
+    font-size: 24px;
+  }
 }
